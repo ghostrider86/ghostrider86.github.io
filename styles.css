@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
 body {
-  background-color: rgb(155, 184, 240);
+  background-color: rgb(164, 183, 223);
   margin: 10px;
 }
 h1, h2 {
@@ -23,7 +23,7 @@ header h1 {
 
 h2 {
   border-bottom: 2px outset;
-  color: rgb(0, 145, 194);
+  color: rgb(8, 103, 192);
 }
 footer p {
   text-align: center;
@@ -37,5 +37,5 @@ img {
   box-shadow: 3px 3px 5px black;
 }
 footer a {
-  color: white;
+  color: rgb(8, 20, 126);
 }

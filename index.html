@@ -4,48 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jacob Elzinga - WDD 230 Assignment Portal | BYU - Idaho</title>
-    <meta
-      name="description"
-      content="Web Frontend Development 1"/>
+    <title>
+      Course Portal 
+    </title>
       <link rel="stylesheet" href="styles.css">
+    <script>
+        let d= new Date();
+        let year = d.getFullYear();
+    </script>      
   </head>
-  <body style="background-color:powderblue;">
-    <div #="wrapper">
+
     <header>
-      <h2>Jacob Elzinga</h2>
-    </header>
-    <img src="LSYR3912_3_125x200.jpeg" alt="Owner's picture" />
-    <nav></nav>
+      <h1>
+        Jacob Elzinga 
+      </h1>
+      <div id="wrapper">
+        <img src="LSYR3912_3_125x200.jpeg" alt="Owner's picture" />
+      </div>  
+    </header id="page-header" >
+    <nav id="page-nav">
     <h2>WDD 230: Assignment Portal</h2>
-    <ul>
-        <li>
-          Lesson 02:
-          <a href="">Link</a>
-        </li>
-        <li>
-          Lesson 03: <a href="">Link</a>
-        </li>
-        <li>
-          Lesson 04: <a href="">Link</a>
-        </li>
-        <li>
-          Lesson 05:
-          <a href="">Link</a>
-        </li>
-        <li>
-          Lesson 05: <a href="">Link</a>
-        </li>
-        <li>
-          Lesson 06: <a href="">Link</a>
-        </li>
+      <ul> 
+        <li>Lesson 02 | <a href="">Link</a> </li>
+        <li>Lesson 03 | <a href="">Link</a> </li>
+        <li>Lesson 04 | <a href="">Link</a> </li>
+        <li>Lesson 05 | <a href="">Link</a> </li>
+        <li>Lesson 06 | <a href="">Link</a> </li> 
       </ul>
+    </nav>
       <footer>
-        &copy; <span id="theyear"></span> | Jacob Elzinga |
-        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"
-          >MDN Documentation Site</a
-        >
-        <p>Last Updated:</p>
+        <p>
+          &copy; <script>document.write(year);</script> | Jacob Elzinga | 
+          <a href="https://developer.mozilla.org/en-US" target="_blank">MDN Documentation Site</a> | BYU-Idaho | Last updated: 
+          <script>document.write(document.lastModified);</script>
+      </p>
       </footer>
     </div>
     </body>

@@ -4,41 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Course Portal 
-    </title>
-      <link rel="stylesheet" href="styles.css">
+    <title> Course Portal </title>
+    <link rel="stylesheet" href="css\normalize.css">
+    <link rel="stylesheet" href="css\styles.css"> 
     <script>
-        let d= new Date();
-        let year = d.getFullYear();
-    </script>      
-  </head>
+      let d = new Date();
+      let year = d.getFullYear();
+    </script>
+    </head>
 
-    <header>
-      <h1>
-        Jacob Elzinga 
-      </h1>
-      <div id="wrapper">
-        <img src="LSYR3912_3_125x200.jpeg" alt="Owner's picture" />
-      </div>  
-    </header id="page-header" >
-    <nav id="page-nav">
+
+    <body id="home">
+      <header id="h_header">
+        <h1 id="home-name">Jacob Elzinga</h1>
+        <img src="pics\LSYR3912_3_125x200.jpeg" alt="Owner's picture" id="home_img" /> 
+    </header>
+    <nav id="home_n">
     <h2>WDD 230: Assignment Portal</h2>
       <ul> 
-        <li>Lesson 02 | <a href="">Link</a> </li>
+        <li>Lesson 02 | <a href="lesson2/design_prin.html">Design Principles</a> </li>
         <li>Lesson 03 | <a href="">Link</a> </li>
         <li>Lesson 04 | <a href="">Link</a> </li>
         <li>Lesson 05 | <a href="">Link</a> </li>
         <li>Lesson 06 | <a href="">Link</a> </li> 
       </ul>
     </nav>
-      <footer>
+      <footer id="home_h">
         <p>
           &copy; <script>document.write(year);</script> | Jacob Elzinga | 
           <a href="https://developer.mozilla.org/en-US" target="_blank">MDN Documentation Site</a> | BYU-Idaho | Last updated: 
           <script>document.write(document.lastModified);</script>
-      </p>
+        </p>
       </footer>
-    </div>
     </body>
   </html>

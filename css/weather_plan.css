@@ -1,0 +1,122 @@
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #35a122;
+    --secondary-color: #7ccc5d;
+    --accent1-color: #4ecdec;
+    --accent2-color: #F8FFFB;
+  
+  }
+
+
+#font1 {
+    font-family: "Pacifico", Arial, Helvetica, sans-serif;
+}
+
+#font2 {
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+nav li {
+    font-family: "Pacifico", Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+}
+
+nav,
+footer,
+nav li a,
+nav li {
+    background-color: #7ccc5d;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    list-style-type: none;
+}
+
+nav a:hover {
+    background-color: #4ecdec;
+    color: black;
+}
+
+nav a {
+    display: block;
+    transition: 0.4s;
+    font-size: 1.5em;
+}
+
+nav ul {
+    padding: 0;
+}
+
+body {
+    background-color: #35a122;
+    margin: 0;
+}
+
+main {
+    background-color: white;
+}
+
+main,
+footer {
+    padding: 1.5em;
+}
+
+nav,
+header {
+    padding: 0.5em;
+    text-align: center;
+}
+
+header img {
+    height: 100px;
+}
+
+#handsome_boi, #old_man {
+    max-height: 300px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+}
+.colors th {
+    background-color: #999;
+}
+  .colors td{
+    width: 25%;
+    height: 3em;
+}
+  
+.primary {
+    background-color: var(--primary-color);
+}
+.secondary {
+    background-color: var(--secondary-color);
+}
+.accent1 {
+    background-color: var(--accent1-color);
+}
+.accent2{
+    background-color: var(--accent2-color);
+}
+
+@media (min-width: 700px) {
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        flex: 1 1 100%;
+    }
+}

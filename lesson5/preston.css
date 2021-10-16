@@ -124,11 +124,11 @@ nav ul.hide {
 
 /* Noscript style rules */
 
-noscript {
-    margin: 1rem;
-    background-color: orange;
-    color: white;
-    width: 100%;
+.jsnote {
+    background-color: #35a122;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
 }
 
 /* Banner style rules */

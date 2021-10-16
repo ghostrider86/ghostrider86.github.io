@@ -131,6 +131,12 @@ nav ul.hide {
     font-weight: bold;
 }
 
+noscript {
+    margin: 1rem;
+    background-color: orange;
+    color: white;
+    width: 100%;
+}
 /* Banner style rules */
 
 #banner {

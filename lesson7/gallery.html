@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston, ID | My Weather Plan</title>
+    <link rel="shortcut icon" href="../pics/logo_w.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="../pics/logo_w.png" alt="Site plan logo">
+            <div id="siteName">
+                <h1>My Weather Plan</h1>
+                <p>You Always Need A Plan</p>
+            </div>
+        </header>
+        <nav>
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a class = "active" href="#">Gallery</a></li>
+            </ul>
+        </nav>
+        <h1>Weather Gallery</h1>
+            <section id="gallery">
+                <div class="weatherbox"><picture><img src="https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" data-src="../pics/cloudy_1.jpeg" alt="Cloudy weather"></picture><p>Cloudy weather</p></div>
+                <div class="weatherbox"><picture><img src="https://images.pexels.com/photos/1162251/pexels-photo-1162251.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" data-src="../pics/lightning_2.jpeg" alt="Lightning storm"></picture><p>City Lightning Storm</p></div>
+                <div class="weatherbox"><picture><img src="https://images.pexels.com/photos/1431822/pexels-photo-1431822.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" data-src="../pics/sunny_3.jpeg" alt="Sunny Day"></picture><p>Sun Through the Clouds</p></div>
+                <div class="weatherbox"><picture><img src="https://images.pexels.com/photos/10000587/pexels-photo-10000587.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" data-src="../pics/foggy_4.jpeg" alt="Foggy"></picture><p>Fog on the mountains</p></div>
+                <div class="weatherbox"><picture><img src="https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" data-src="../pics/fall_5.jpeg" alt="Fall Weather"></picture><p>Cold Fall Day</p></div>
+                <div class="weatherbox"><picture><img src="https://images.pexels.com/photos/125510/pexels-photo-125510.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" data-src="../pics/rain_6.jpeg" alt="Rainy day"></picture><p>Rainy City Day</p></div>
+                <div class="weatherbox"><picture><img src="https://images.pexels.com/photos/1446076/pexels-photo-1446076.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" data-src="../pics/tornado_7.jpeg" alt="Tornado and Lightning"></picture><p>Tornado and Lightning</p></div>
+                <div class="weatherbox"><picture><img src="https://images.pexels.com/photos/108941/pexels-photo-108941.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" data-src="../pics/rainbow_8.jpeg" alt="Rainbow"></picture><p>Large Rainbow on a field</p></div>
+                <div class="weatherbox"><picture><img src="https://images.pexels.com/photos/76969/cold-front-warm-front-hurricane-felix-76969.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" data-src="../pics/hurricane_9.jpeg" alt="Large Hurricane"></picture><p>Large Hurricane over globe</p></div>
+            </section>
+    </main>
+        <footer>
+            <section id="footer">
+                <div id="contactInfo">
+                    <h2>Contact Us</h2>
+                    <p class="dashed">Email: myweatherplan@org</p>
+                    <p class="dotted">Number: 123-456-7890</p>
+             
+                </div>                
+            </section>
+            <div id="footerBar">
+                <p>
+                    &copy;
+                    <span id="copyrightYear"></span> My Weather Plan |
+                    <a href=" https://developer.mozilla.org/en-US" target="_blank">MDN Documentation Site</a> | BYU-Idaho | Last updated:
+                    <span id="dateLastModified"></span>
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script src="gallery.js"></script>
+</body>
+</html>

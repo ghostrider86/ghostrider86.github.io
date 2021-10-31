@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+body {
+    font-family: Pacifico, Arial;
+    letter-spacing: 2.4px;
+    font-size: 1.2em;
+    background: #7ccc5d;
+    color: black;
+}
+h1 {
+    margin-left: 1.5em;
+}
+
+#flower_column {
+    display: flex;
+    flex-direction: column;
+}
+
+body picture img {
+    border-radius: 10px;
+    margin-bottom: 1.5em;
+    margin-left: 1.5em;
+}
+
+
+
+
+
+img[data-src] {
+    filter: blur(.5em);
+}
+
+img {
+    filter: blur(0em);
+    transition: filter 500ms;
+  }

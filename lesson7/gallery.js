@@ -23,7 +23,7 @@ document.getElementById("copyrightYear").textContent = year;
 
 // images
 
-let imagesToLoad = document.querySelectorAll("img[data-src]");
+let image_load = document.querySelectorAll("img[data-src]");
 
 const imgOptions = {
   threshold: 0.5
@@ -45,11 +45,11 @@ if ("IntersectionObserver" in window) {
     });
   }, imgOptions);
 
-  imagesToLoad.forEach((img) => {
+  image_load.forEach((img) => {
     observer.observe(img);
   });
 } else {
-  imagesToLoad.forEach((img) => {
+  image_load.forEach((img) => {
     loadImages(img);
   });
 }

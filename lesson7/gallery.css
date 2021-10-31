@@ -184,7 +184,11 @@ nav ul.hide {
 h1 {
     text-align: center;
 }
-
+@media screen and (min-width: 650px) {
+    #gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 @media screen and (min-width: 885px) {
     main {
@@ -211,11 +215,7 @@ h1 {
 
 }
 
-@media screen and (min-width: 650px) {
-    #gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-}
+
 
 @media screen and (min-width: 1200px) {
     #gallery {
@@ -227,6 +227,6 @@ h1 {
     }
 
     .weatherbox:hover {
-        box-shadow: 0 0 15px #333;
+        box-shadow: 0 0 25px rgb(17, 95, 189);
     }
 }

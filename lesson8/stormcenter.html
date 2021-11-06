@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston, ID | My Weather Plan</title>
+    <link rel="shortcut icon" href="../pics/logo_w.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stormcenter.css">
+</head>
+<body>
+    <div id="wrapper">
+
+        <header>
+            <img src="../pics/logo_w.png" alt="Site plan logo">
+            <div id="siteName">
+                <h1>My Weather Plan</h1>
+                <p>You Always Need A Plan</p>
+            </div>
+        </header>
+        <nav>
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../lesson5/preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a class = "active" href="../lesson8/stormcenter.html">Storm Center</a></li>
+                <li><a href="../lesson7/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+                <h2>Storm Report</h2>
+                <h3>If you have encountered a storm, please fill the form below</h3>
+            <form action="thank.html">
+                <fieldset>
+                    <label class="pinfo">Your Name: <input type="text" name="fname" placeholder="Johnathan Doe" required minlength="5" pattern="^([A-Za-z]+[,.]?[ ]?|[A-Za-z]+['-]?)+$"></label>
+                    <label class="pinfo">Your email please: <input type="email" placeholder="myemail@provider.com"
+                        required></label>
+                    <label class="pinfo">Phone Number: <input type="tel" name="phone" placeholder="123-456-7890"
+                            required></label>
+                    <label class="pinfo">Zip code: <input type="number" name="zip" placeholder="12345" required></label>
+                </fieldset>
+                <fieldset>
+                    <label class="zippy">Date of Storm: <input type="date" name="stormdate" required></label>
+                    <label class="zippy">What type of storm was it?
+                        <select name="typeofstorm">
+                            <option value="">Please Select &#9662;</option>
+                            <option value="Flash Flood">Flash Flood</option>
+                            <option value="Hail">Hail</option>
+                            <option value="Hurricane">Hurricane</option>
+                            <option value="Thunderstorm">Thunderstorm</option>
+                            <option value="Tornado">Tornado</option>
+                        </select>
+                    </label>
+    
+                    <label class="zippy">How bad is the Storm?</label>
+                    <p>For example 1 would be "its okey to be outside" and 10 would be "its life thretening, may need to evacuate"</p>
+                    <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                        oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">5</span>
+                    <datalist id="tickmarks">
+                        <option value="0"></option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10"></option>
+                    </datalist>
+                </fieldset>
+    
+                <fieldset>
+                    <label class="region">Storm Region
+                        <select name="region">
+                            <option value="">Please Select Your Region &#9662;</option>
+                            <option value="preston">Preston</option>
+                            <option value="fishhaven">Fish Haven</option>
+                            <option value="sodasprings">Soda Springs</option>
+                        </select>
+                    </label>
+                </fieldset>
+    
+                <!--RADIO-->
+                <fieldset>
+                    <legend>Are you in danger?</legend>
+                    <div class="danger">
+                        <label for="yes"><input type="radio" id="yes" name="indanger" value="yes">
+                            Yes</label>
+                    </div>
+                    <div class="danger">
+                        <label for="maybe"><input type="radio" id="maybe" name="indanger" value="maybe"> Maybe</label>
+                    </div>
+                    <div class="danger">
+                        <label for="no"><input type="radio" id="no" name="indanger" value="no"> No</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+    
+                    <div id="moreinfo">
+                        <label for="moreinfo">Storm Description</label>
+                        <textarea name="moreinfo" id="moreinfo" cols="30" rows="10"></textarea>
+                    </div>
+                </fieldset>
+                <input type="submit" value="Submit" id="submitbutton" >
+            </form>
+        </main>
+        <footer>
+
+            <div id="footerBar">
+                <p>
+                    &copy;
+                    <span id="copyrightYear"></span> My Weather Plan |
+                    <a href=" https://developer.mozilla.org/en-US" target="_blank">MDN Documentation Site</a> | BYU-Idaho | Last updated:
+                    <span id="dateLastModified"></span>
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script src="stormcenter.js"></script>
+</body>
+</html>

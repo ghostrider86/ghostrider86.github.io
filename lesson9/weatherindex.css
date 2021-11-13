@@ -143,15 +143,14 @@ h1 {
 .town_info_card div .motto {
     margin: 0;
     position: relative;
-    font-size: 9pt;
+    font-size: 10pt;
     text-align: center;
     font-style: italic;
-    font-weight: bold;
 }
 
 .town_info_card h2 {
     text-align: center;
-    font-size: 16pt;
+    font-size: 18pt;
     margin-bottom: 0;
     padding-top: 1rem;
 }
@@ -161,7 +160,7 @@ h1 {
 }
 
 .town_info_card p {
-    font-size: 11pt;
+    font-size: 12pt;
 }
 
 .town_info_card {
@@ -170,21 +169,21 @@ h1 {
     width: 100%;
     margin: 1rem auto;
     background-color: #4ecdec;
-    text-align: center;
+    text-align: right;
     padding-bottom: 1rem;
-    
+    padding: 10px;
 }
 
 .town_info_card img {
     max-width: 100%;
     display: block;
     margin: 1rem auto;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 3px 3px 3px black;
     max-height: 170px;
     margin-bottom: 1rem;
 }
 
-@media screen and (min-width: 500px) {
+@media only screen and (min-width: 32.5rem) {
     .town_info_card {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -200,7 +199,7 @@ h1 {
     }
 }
 
-@media screen and (min-width: 885px) {
+@media only screen and (min-width: 64rem) {
     main {
         margin: 0 auto;
         max-width: 900px;

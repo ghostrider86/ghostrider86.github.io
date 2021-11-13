@@ -166,12 +166,11 @@ h1 {
 .town_info_card {
     display: block;
     height: auto;
-    width: 100%;
+    width: 90%;
     margin: 1rem auto;
     background-color: #4ecdec;
     text-align: right;
     padding-bottom: 1rem;
-    padding: 10px;
 }
 
 .town_info_card img {

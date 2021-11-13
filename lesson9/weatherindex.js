@@ -1,4 +1,3 @@
-
 // Function for toggling navigation menu.
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("hide")
@@ -22,22 +21,20 @@ document.getElementById("dateLastModified").textContent = lastModifiedFormatted;
 document.getElementById("copyrightYear").textContent = year;
 
 
-
-// Inject information about towns into page
 function createtown_info_card(data, i) {
     let info = document.createElement("div");
     let card = document.createElement("section");
     card.setAttribute("class", "town_info_card");
     let name = document.createElement("h2");
-    let motto = document.createElement("p");
-    motto.setAttribute("class", "motto")
+    let town_motto = document.createElement("p");
+    town_motto.setAttribute("class", "town_motto")
     let year = document.createElement("p");
     let population = document.createElement("p");
     let annual_rain = document.createElement("p");
     let img = document.createElement("img");
 
     name.textContent = data.towns[i].name;
-    motto.textContent = data.towns[i].motto;
+    town_motto.textContent = data.towns[i].town_motto;
     year.textContent = `Year Founded: ${data.towns[i].yearFounded}`;
     population.textContent = `Population: ${data.towns[i].currentPopulation}`;
     annual_rain.textContent = `Annual Rain Fall: ${data.towns[i].averageRainfall}`
@@ -46,7 +43,7 @@ function createtown_info_card(data, i) {
 
     card.appendChild(info)
     info.appendChild(name);
-    info.appendChild(motto);
+    info.appendChild(town_motto);
     info.appendChild(year);
     info.appendChild(population);
     info.appendChild(annual_rain);

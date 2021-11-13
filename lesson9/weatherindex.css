@@ -51,7 +51,7 @@ body {
 }
 
 main {
-    background-color: #7ccc5d;
+    background-color: #35a122;
 }
 
 nav ul {
@@ -130,7 +130,7 @@ nav ul.hide {
     padding: 1rem;
 }
 footer {
-    background-color: #35a122;
+    background-color: #7ccc5d;
     padding: 2rem;
 }
 
@@ -140,7 +140,7 @@ h1 {
 
 /* week 9 town info*/
 
-.town_info_card div .motto {
+.town_info_card div .town_motto {
     margin: 0;
     position: relative;
     font-size: 10pt;

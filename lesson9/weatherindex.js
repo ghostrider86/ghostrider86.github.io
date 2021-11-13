@@ -58,7 +58,7 @@ function createtown_info_card(data, i) {
 var towns = []
 //https://byui-cit230.github.io/weather/data/towndata.json
 // towns.json
-const link = "https://byui-cit230.github.io/weather/data/towndata.json"
+const link = "towns.json"
 
 fetch(link)
 .then(response => {

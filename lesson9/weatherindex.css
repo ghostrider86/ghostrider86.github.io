@@ -169,6 +169,7 @@ h1 {
     width: 100%;
     margin-left: 0.2rem;
     margin-right: 0.2rem;
+    margin: 1rem auto;
     background-color: #4ecdec;
     text-align: left;
     padding-bottom: 1rem;

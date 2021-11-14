@@ -23,31 +23,35 @@ document.getElementById("copyrightYear").textContent = year;
 
 
 function createtown_info_card(data, i) {
+    //card infromation
     let info = document.createElement("div");
     let card = document.createElement("section");
     card.setAttribute("class", "town_info_card");
+
+    // Card elements
     let name = document.createElement("h2");
     let motto = document.createElement("p");
     motto.setAttribute("class", "motto")
+    //more card information
     let year = document.createElement("p");
-    let population = document.createElement("p");
+    let populace = document.createElement("p");
     let annual_rain = document.createElement("p");
     let img = document.createElement("img");
 
     name.textContent = data.towns[i].name;
     motto.textContent = data.towns[i].motto;
     year.textContent = `Year Founded: ${data.towns[i].yearFounded}`;
-    population.textContent = `Population: ${data.towns[i].currentPopulation}`;
+    populace.textContent = `Population: ${data.towns[i].currentPopulation}`;
     annual_rain.textContent = `Annual Rain Fall: ${data.towns[i].averageRainfall}`
     img.setAttribute("src", data.towns[i].img);
     img.setAttribute("alt", `landscape in ${data.towns[i].name}, Idaho.`)
 
+    info.appendChild(year);
+    info.appendChild(populace);
+    info.appendChild(annual_rain);
     card.appendChild(info)
     info.appendChild(name);
     info.appendChild(motto);
-    info.appendChild(year);
-    info.appendChild(population);
-    info.appendChild(annual_rain);
     card.appendChild(img);
 
     document.querySelector("#info").appendChild(card);
@@ -55,6 +59,7 @@ function createtown_info_card(data, i) {
 
 var towns = []
 const json_file = "towns.json"
+// fetch from file
 
 fetch(json_file)
 .then(response => {
@@ -65,6 +70,8 @@ fetch(json_file)
         throw new Error("Unable to fetch data.")
     }
 })
+
+//return error if unable to fetch file
 .then(data => {
     for (let i=0; i < data.towns.length; i++) {
         switch (data.towns[i].name) {

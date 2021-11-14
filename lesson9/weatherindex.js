@@ -23,7 +23,10 @@ document.getElementById("copyrightYear").textContent = year;
 
 
 function createtown_info_card(data, i) {
-    
+    //card infromation
+    let info = document.createElement("div");
+    let card = document.createElement("section");
+    card.setAttribute("class", "town_info_card");
 
     // Card header elements
     let name = document.createElement("h2");
@@ -35,10 +38,7 @@ function createtown_info_card(data, i) {
     let annual_rain = document.createElement("p");
     let img = document.createElement("img");
 
-    //card infromation
-    let info = document.createElement("div");
-    let card = document.createElement("section");
-    card.setAttribute("class", "town_info_card");
+ 
 
     name.textContent = data.towns[i].name;
     motto.textContent = data.towns[i].motto;
@@ -51,10 +51,11 @@ function createtown_info_card(data, i) {
     info.appendChild(year);
     info.appendChild(populace);
     info.appendChild(annual_rain);
+    card.appendChild(img);
     card.appendChild(info)
     info.appendChild(name);
     info.appendChild(motto);
-    card.appendChild(img);
+    
 
     document.querySelector("#info").appendChild(card);
 }

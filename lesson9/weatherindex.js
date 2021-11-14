@@ -23,20 +23,22 @@ document.getElementById("copyrightYear").textContent = year;
 
 
 function createtown_info_card(data, i) {
-    //card infromation
-    let info = document.createElement("div");
-    let card = document.createElement("section");
-    card.setAttribute("class", "town_info_card");
+    
 
-    // Card elements
+    // Card header elements
     let name = document.createElement("h2");
     let motto = document.createElement("p");
     motto.setAttribute("class", "motto")
-    //more card information
+    //card information
     let year = document.createElement("p");
     let populace = document.createElement("p");
     let annual_rain = document.createElement("p");
     let img = document.createElement("img");
+
+    //card infromation
+    let info = document.createElement("div");
+    let card = document.createElement("section");
+    card.setAttribute("class", "town_info_card");
 
     name.textContent = data.towns[i].name;
     motto.textContent = data.towns[i].motto;

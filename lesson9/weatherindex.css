@@ -170,11 +170,10 @@ h1 {
 
 .town_info_card p {
     font-size: 12pt;
-    font-style: bold;
+
 }
 .town_info_card div .motto {
     margin: 0;
-    position: center;
     font-size: 10pt;
     text-align: center;
     font-style: italic;

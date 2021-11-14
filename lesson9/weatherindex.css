@@ -156,14 +156,6 @@ h1 {
     padding-top: 1rem;
 }
 
-.town_info_card div {
-    padding: 0 1rem;
-}
-
-.town_info_card p {
-    font-size: 12pt;
-    font-style: bold;
-}
 
 .town_info_card {
     display: block;
@@ -183,6 +175,16 @@ h1 {
     max-height: 170px;
     margin-bottom: 1rem;
 }
+
+.town_info_card div {
+    padding: 0 1rem;
+}
+
+.town_info_card p {
+    font-size: 12pt;
+    font-style: bold;
+}
+
 
 
 @media only screen and (min-width: 32.5rem) {

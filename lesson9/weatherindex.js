@@ -40,7 +40,7 @@ function createtown_info_card(data, i) {
     population.textContent = `Population: ${data.towns[i].currentPopulation}`;
     annual_rain.textContent = `Annual Rain Fall: ${data.towns[i].averageRainfall}`
     img.setAttribute("src", data.towns[i].img);
-    img.setAttribute("alt", `Image of barn in ${data.towns[i].name}, Idaho.`)
+    img.setAttribute("alt", `landscape in ${data.towns[i].name}, Idaho.`)
 
     card.appendChild(info)
     info.appendChild(name);

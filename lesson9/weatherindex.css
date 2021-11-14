@@ -143,14 +143,14 @@ h1 {
 
 .town_info_card div .motto {
     margin: 0;
-    position: relative;
+    position: right;
     font-size: 10pt;
     text-align: center;
     font-style: italic;
 }
 
 .town_info_card h2 {
-    text-align: center;
+    text-align: right;
     font-size: 18pt;
     margin-bottom: 0;
     padding-top: 1rem;

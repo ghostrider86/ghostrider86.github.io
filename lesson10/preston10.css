@@ -214,7 +214,7 @@ nav ul.hide {
   }
   
   footer a {
-    color: white;
+    color: black;
   }
   footer {
     background-color: #7ccc5d;
@@ -281,7 +281,7 @@ nav ul.hide {
     }
 
     .dayofweek {
-        background-color: #4ecdec;
+        background-color: #145363;
         text-align: center;
         color: white;
     }

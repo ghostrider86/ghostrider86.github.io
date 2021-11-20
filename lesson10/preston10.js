@@ -32,7 +32,7 @@ function windChill(tempF, windSpeed) {
     
 }
 const apiURLcurrent =
-  "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=9cef91c93e68d2c9661f7465a0530962";
+  "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=edf73b54da9bd1d3066cf86e85a96a24";
 fetch(apiURLcurrent)
   .then((response) => response.json())
   .then((jsObject) => {

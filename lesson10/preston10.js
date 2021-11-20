@@ -1,6 +1,6 @@
 // Function for toggling navigation menu.
 function toggleMenu() {
-    document.getElementById("Navjs").classList.toggle("primaryNav")
+    document.getElementById("primaryNav").classList.toggle("hide")
 }
 
 // set variables for days and months

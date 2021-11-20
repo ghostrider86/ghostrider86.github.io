@@ -1,0 +1,362 @@
+  /*--------- Gallery CSS 
+nav li {
+    font-family: "Pacifico", Arial, Helvetica, sans-serif;
+}
+
+p, li{
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+}
+----------*/
+body {
+    background-color: #35a122;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  }
+  
+  header {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0 1rem;
+    display: flex;
+    background-color: #35a122;
+  }
+  
+  .headings {
+    display: flex;
+    flex-direction: column;
+    font-family: "Pacifico", Arial, Helvetica, sans-serif;
+  }
+  
+  footer {
+    background-color: #7ccc5d;
+    color: black;
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+  }
+  
+  header img {
+    width: 30px;
+    height: auto;
+    padding-left: 0.25rem;
+  }
+  
+  .motto {
+    font-size: 0.9rem;
+  }
+
+  nav ul.hide {
+    display: none;
+}
+  
+  nav {
+    background-color: #7ccc5d;
+    margin: 0 auto;
+  }
+  /*----------- Storm Center ----------*/
+  .primaryNav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .primaryNav li:first-child {
+    display: block;
+  }
+  
+  .primaryNav li {
+    display: none;
+  }
+  
+  .primaryNav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 0.8rem;
+    border-top: 3px solid rgba(0,0,0,0.5);
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  }
+  
+  .responsive li {
+    display: block;
+  }
+  
+  .active {
+    font-weight: bold;
+    color: black;
+    text-decoration: underline;
+  }
+  
+  main {
+    max-width: 760px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 1rem;
+    text-shadow: 2px 2px 4px #4ecdec;
+    margin: 0;
+    padding-left: 1rem;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    font-family: "Pacifico", Arial, Helvetica, sans-serif;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  .herodiv {
+    margin: 10px auto;
+    position: relative;
+  }
+  
+  .forecastheading {
+    display: none;
+  }
+  
+  .weekforecast {
+    display: none;
+  }
+  
+  .stats {
+    background: radial-gradient(white, #4ecdec);
+    border: 1px solid #000;
+    box-shadow: 0 0 30px #111;
+    opacity: 0.94;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .stats h3 {
+    grid-column: 1 / 3;
+    text-align: center;
+    text-decoration: underline;
+    margin: 15px 10px 0px 10px;
+  }
+  
+  .stats ul {
+    list-style-type: none;
+    line-height: 1.5rem;
+  }
+  
+  .statsnames {
+    text-align: right;
+  }
+  
+  .statsvalues {
+    padding-left: 5px;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .article {
+    background-color: #d7f5ce;
+    border: 1px solid #b1fcb1;
+    padding: 1rem;
+  }
+  
+  .article img {
+    max-width: 254px;
+    box-shadow: 0px 0px 30px #4ecdec;
+    margin: auto;
+  }
+  
+  .contact {
+    background-color: #d7f5ce;
+    border: 1px solid #b1fcb1;
+    padding: 1.3rem;
+    margin-top: 2rem;
+  }
+  
+  .mapimg {
+    max-width: 200px;
+    border: 1px solid #000;
+  }
+  
+  
+  footer {
+    width: 100%;
+    align-items: center;
+    padding: 1rem 0 1rem;
+    text-align: center;
+  }
+  
+  footer a {
+    color: white;
+  }
+  
+
+  
+  /*----- Clearfix: Force an Element not to collapse -----*/
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  button {
+    display: block;
+    height: 10px;
+    font-family: "Pacifico", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    border: 3px solid rgba(0,0,0,0.5);
+    background-color: #4ecdec;
+    color: white;
+    transition: 0.5s;
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    height: 100px;
+    width: 100px;
+}
+
+  @media only screen and (min-width: 32.5em) {
+    header img {
+      padding: 0 1rem 0;
+      width: 75px;
+    }
+  
+    .motto {
+      padding-left: 0;
+    }
+  
+    .primaryNav {
+      display: flex;
+    }
+  
+    .primaryNav a:hover {
+      color: #000000;
+      background-color: #4ecdec;
+    }
+  
+    .primaryNav li {
+      display: block;
+      flex: 1 1 auto;
+    }
+  
+    .primaryNav a {
+      text-align: center;
+    }
+  
+    .primaryNav li:first-child {
+      display: none;
+    }
+
+  
+    h1 {
+      font-size: 2.5rem;
+      padding-left: 0rem;
+    }
+  
+    .forecastheading {
+      display: block;
+    }
+  
+    .stats {
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      margin: 0;
+    }
+  
+    .weekforecast {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      border: 2px solid black;
+      margin-bottom: 2rem;
+      grid-gap: 1px;
+    }
+  
+    .article img {
+      float: right;
+      margin: 1rem;
+    }
+  
+    .weathericon {
+      max-width: 64px;
+      margin: auto;
+    }
+  
+    .contactinfo {
+      float: right;
+      margin-right: 10em;
+    }
+    button {
+        display: none;
+    }
+      /*----------- Preston Page ----------*/
+  
+  .weekforecast .dailyicon {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .dayofweek {
+    background-color: #4ecdec;
+    text-align: center;
+    color: white;
+  }
+
+  .weekforecast p {
+    text-align: center;
+  }
+  
+  }
+
+/* Desktop view */
+@media only screen and (min-width: 80em) {
+    button {
+      display: none;
+    }
+  
+    nav ul.hide {
+      display: flex;
+      padding-left: 0;
+      text-align: center;
+    }
+  
+    nav ul li {
+      display: block;
+      flex: 1 1 auto;
+    }
+  
+    nav ul li a {
+      border: none;
+      border-right: 1px solid rgba(0, 0, 0, 0.3);
+    }
+  
+    header img {
+      padding-right: 1rem;
+    }
+  
+    h1 {
+      font-size: 3.5rem;
+    }
+  
+    .motto {
+      font-size: 0.9rem;
+    }
+    button {
+        display: none;
+    }
+  
+  }
+  

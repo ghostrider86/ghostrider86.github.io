@@ -1,0 +1,46 @@
+{
+  "directory": [
+      {
+        "name": "Pepsi",
+        "logo": "pictures/business_1",
+        "phone": "(541) 758-1212",
+        "link": "https://business.albanychamber.com/list/member/pepsi-cola-of-corvallis-inc-1455"
+      },
+      {
+        "name": "Consumer Power INC",
+        "logo": "pictures/business_2",
+        "phone": "(541) 929-3124",
+        "link": "http://alpinesportsutah.com"
+      },
+      {
+        "name": "Target Distribution Center",
+        "logo": "pictures/business_3",
+        "phone": "(541) 917-5800",
+        "link": "https://jobs.target.com/employment/albany-oregon-united-states-distribution-center-hourly-jobs/1118/11134/6252001-5744337-5736713-5710756/4"
+      },
+      {
+        "name": "Allegheny Technologies Incorporated",
+        "logo": "pictures/business_4",
+        "phone": "(541) 967-9000",
+        "link": "https://www.atimetals.com/aboutati/Pages/Locations.aspx"
+      },
+      {
+        "name": "Weyerhaeuser",
+        "logo": "pictures/business_5",
+        "phone": "(800) 742-0184",
+        "link": "https://www.weyerhaeuser.com/woodproducts/distribution/albany-distribution-center/"
+      },
+      {
+        "name": "Pacific Power",
+        "logo": "pictures/business_6",
+        "phone": "(541) 730-7486",
+        "link": "https://www.pacificpower.net/"
+      },
+      {
+        "name": "Mennonite Village",
+        "logo": "pictures/business_6",
+        "phone": "(541) 928-7232",
+        "link": "https://mennonitevillage.org/"
+      }
+      ]
+}

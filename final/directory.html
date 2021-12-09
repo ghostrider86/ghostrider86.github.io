@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ogden Chamber of Commerce | Directory</title>
+    <title>Albany Chamber of Commerce | Directory</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/directory.css">
@@ -25,12 +25,22 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <main>
-        <h1>Business Directory</h1>
-        <button class="layoutButton" onclick="toggleGrid()"><img src="../final/pictures/grid.png" alt="grid icon" class="button"></button>
-        <button class="layoutButton" onclick="toggleList()"><img src="../final/pictures/list.png" alt="list icon" class="button"></button>
-        <div id="cards"></div>
-    </main>
+    <section class="business-directory white-bg">
+        <div class="section-content">
+            <h2 class="section-heading">Business Directory</h2>
+            <div class="divider"></div>
+            <div class="directory-button-box">
+                <div id="left-button" class="directory-button">
+                    <img src="../final/pictures/list.png" alt="list icon" draggable="false">
+                </div>
+                <div id="right-button" class="directory-button">
+                    <img src="../final/pictures/grid.png" alt="grid icon" draggable="false">
+                </div>
+            </div>
+            <div class="grid-view"></div>
+        </div>
+    </section>
+</main>
     <footer>
         <div class="align">
             <div id="contact">
@@ -56,6 +66,6 @@
             </div>
         </div> 
     </footer>
-    <script src="js/directory.js"></script>
+    <script src="js_json/directory.js"></script>
 </body>
 </html>

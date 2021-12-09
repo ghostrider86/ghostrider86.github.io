@@ -17,7 +17,7 @@ gridbutton.addEventListener('click', ()=>{
 }, false);
 
 // Directory page
-fetch("../js_json/businesses")
+fetch("../../final/businesses.json")
 .then(function (response) {
     if(response.ok) {
     return response.json();
@@ -36,6 +36,7 @@ throw new ERROR('Network response was not ok');
         document.getElementById('businessimg' + i).src = businessimg;
         document.getElementById('businessimg' + i).alt = name;
         document.getElementById('businessname' + i).textContent = name;
+        document.getElementById('businesscontact' + i).innerHTML = phone;
         document.getElementById('businesswebsite' + i).href = website;
         console.log(website);
         console.log("success");

@@ -188,7 +188,7 @@ input, textarea, select{
 label {
     display: block;
     padding-top: 0.5rem;
-    padding-bottom: -15px;
+    padding-bottom: 15px;
 }
 
 form #submit {

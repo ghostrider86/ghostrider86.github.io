@@ -19,7 +19,6 @@ main img {
 }
 
 
-/* Header --------------------------------------------*/
 header {
     background-color: #6a994e;
     height: 75px;
@@ -55,8 +54,6 @@ header button:active {
 }
 
 
-
-/*Navigation -----------------------------------------*/
 nav {
     background-color: #9EC346;
     font-family: "Pacifico";
@@ -109,15 +106,10 @@ nav li:active {
 
 
 
-/*Main -----------------------------------------------*/
-
-/*Purpose ------------------------*/
 #purpose {
     padding: 1rem;
 }
 
-
-/*Call to Action -----------------*/
 
 #callToAction {
     padding: .8rem;
@@ -147,7 +139,6 @@ nav li:active {
     box-shadow: none;
 }
 
-/*Events -----------------------*/
 
 #events {
     padding: 1rem;
@@ -169,7 +160,7 @@ nav li:active {
     border: 2px solid black;
     border-radius: 2px;
 }
-/*Weather ----------------------*/
+
 
 #weather {
     padding: 1rem;
@@ -200,7 +191,6 @@ nav li:active {
     color: white;
 }
 
-/*Advertising ------------------*/
 
 #advertising {
     padding: 1rem;
@@ -211,8 +201,6 @@ nav li:active {
     padding: 1rem;
 }
 
-
-/*Footer ---------------------------------------------*/
 footer {
     background-color: #9EC346;
     color: black;
@@ -248,32 +236,28 @@ footer a {
 }
 
 
-/*Medium Size Viewport */
+/*Tablet */
 
 @media screen and (min-width: 700px) {
 
-        /*Events ----*/
         
         #eventsList {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
         }
 
-        /*forecast ----*/
 
         #forecast {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
         }
 
-        /*Advertising ---*/
 
         #adImages {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
         }
 
-        /*Footer ----*/
 
         .align {
             display: grid;
@@ -289,7 +273,7 @@ footer a {
 }
 
 
-/* Larger Size Viewport */
+/* Desktop */
 
 @media screen and (min-width: 1400px){
     .hide {
@@ -342,7 +326,6 @@ footer a {
         max-width: 1000px;
     }
 
-    /*Call to action ----*/
 
     #callToAction {
         position: absolute;

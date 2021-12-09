@@ -61,8 +61,6 @@ fetch(URL)
 
 })
 
-// Toggle Directory Layout
-
 function toggleGrid() {
     document.getElementById("cards").setAttribute("class", "grid");
 }

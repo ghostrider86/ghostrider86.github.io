@@ -22,8 +22,6 @@ document.getElementById("dateLastModified").textContent = lastModifiedFormatted;
 document.getElementById("copyrightYear").textContent = year;
 
 
-// Weather 
-
 const apiKey = "82a52e6780911b1a31b5c54018fbfdba";
 let lat = "44"
 let lon = "123"
@@ -42,7 +40,7 @@ fetch(prestonLink)
 })
 .then(data => {
     console.log(data);
-    // Current conditions
+
     curTemp = document.querySelector("#curTemp");
     curTemp.innerHTML = Math.round(data.current.temp);
 
@@ -52,7 +50,6 @@ fetch(prestonLink)
     curHumidity = document.querySelector("#curHumidity");
     curHumidity.innerHTML = data.current.humidity;
 
-    // 3 Day Forecast
 
     var dayIndex = new Date().getDay() + 1;
     var weekdayForecast = new Array(
@@ -105,7 +102,7 @@ fetch(prestonLink)
             dayIndex = 0;
         }
     }
-    // Weather alerts
+
     if (data.alert) {
         let alert = document.querySelector("#alert");
         

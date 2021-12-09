@@ -19,7 +19,6 @@ main img {
 }
 
 
-/* Header --------------------------------------------*/
 header {
     background-color: #6a994e;
     height: 75px;
@@ -55,8 +54,6 @@ header button:active {
 }
 
 
-
-/*Navigation -----------------------------------------*/
 nav {
     background-color: #9EC346;
     font-family: "Pacifico";
@@ -107,11 +104,6 @@ nav li:active {
     font-weight: bold;
 }
 
-
-/*Main -----------------------------------------------*/
-/**********
-Contact Page
-***********/
 
 iframe {
     display: block;
@@ -173,7 +165,6 @@ form #submit:active {
     padding: 0.5rem;
 }
 
-/*Footer ---------------------------------------------*/
 footer {
     background-color: #9EC346;
     color: black;
@@ -209,10 +200,9 @@ footer a {
 }
 
 
-/*Medium Size Viewport */
+/*tablet */
 
 @media screen and (min-width: 700px) {
-        /*Footer ----*/
 
         .align {
             display: grid;
@@ -232,7 +222,7 @@ footer a {
 }
 
 
-/* Larger Size Viewport */
+/* desktop */
 
 @media screen and (min-width: 1400px){
     .hide {

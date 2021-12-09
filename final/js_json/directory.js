@@ -55,30 +55,30 @@ fetch(URL)
     throw new Error("Network response was not ok.")
     })
 .then(data => {
-    for (let i=0; i < data.companies.length; i++) {
+    for (let i=0; i < data.directory.length; i++) {
     let info = document.createElement("div");
     let card = document.createElement("div")
     card.setAttribute("class", "card");
     let name = document.createElement("h2");
     let address = document.createElement("p");
     let website = document.createElement("a");
-    website.setAttribute("href", data.companies[i].website);
+    website.setAttribute("href", data.directory[i].website);
     website.setAttribute("target", "_blank")
     let logo = document.createElement("img");
 
-    name.textContent = data.companies[i].name;
-    address.textContent = data.companies[i].address;
+    name.textContent = data.directory[i].name;
+    address.textContent = data.directory[i].address;
     website.innerHTML = "&#127760; website";
-    logo.setAttribute("src", data.companies[i].logo);
+    logo.setAttribute("src", data.directory[i].logo);
     logo.setAttribute("alt", "Company logo");
 
-    cards = document.querySelector("#cards");
+    card = document.querySelector("#cards");
     info.appendChild(name);
     info.appendChild(address);
     info.appendChild(website);
     card.appendChild(info);
     card.appendChild(logo);
-    cards.appendChild(card);
+    card.appendChild(card);
     }
 
 })

@@ -46,7 +46,7 @@ fetch(URL)
 
     name.textContent = data.companies[i].name;
     address.textContent = data.companies[i].address;
-    website.innerHTML = "&#127760; website";
+    website.innerHTML = "Web Link";
     logo.setAttribute("src", data.companies[i].logo);
     logo.setAttribute("alt", "Company logo");
 

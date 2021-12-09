@@ -17,7 +17,7 @@ gridbutton.addEventListener('click', ()=>{
 }, false);
 
 // Directory page
-fetch("../js_json/businesses")
+fetch("js_json/directory.js")
 .then(function (response) {
     if(response.ok) {
     return response.json();

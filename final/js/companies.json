@@ -4,43 +4,43 @@
         "name": "Pepsi",
         "address": "2636 NE Belvue St, Corvallis, OR 97330",
         "website": "https://business.albanychamber.com/list/member/pepsi-cola-of-corvallis-inc-1455",
-        "logo": "images/advertisement(0).png"
+        "logo": "images/company[0].png"
       },
       {
         "name": "Consumer Power INC",
         "address": "6990 W Hills Rd, Philomath, OR 97370",
         "website": "https://www.cpi.coop/",
-        "logo": "images/advertisement(1).png"
+        "logo": "images/company[1].png"
       },
       {
         "name": "Target Distribution Center",
         "address": "875 Beta Dr SW, Albany, OR 97321",
         "website": "https://jobs.target.com/employment/albany-oregon-united-states-distribution-center-hourly-jobs/1118/11134/6252001-5744337-5736713-5710756/4",
-        "logo": "images/advertisement(2).png"
+        "logo": "images/company[2].png"
       },
       {
         "name": "Allegheny Technologies Incorporated",
         "address": "530 34th Ave SW, Albany, OR 97322",
         "website": "https://www.atimetals.com/aboutati/Pages/Locations.aspx",
-        "logo": "images/advertisement[3].jpg"
+        "logo": "images/company[3].jpg"
       },
       {
         "name": "Weyerhaeuser",
         "address": "2812 Old Salem Rd NE, Albany, OR 97321",
         "website": "https://www.weyerhaeuser.com/woodproducts/distribution/albany-distribution-center/",
-        "logo": "images/advertisement[4].jpg"
+        "logo": "images/company[4].jpg"
       },
       {
         "name": "Pacific Power",
         "address": "830 Old Salem Rd NE, Albany, OR 97321",
         "website": "https://www.pacificpower.net/",
-        "logo": "images/advertisement[5].png"
+        "logo": "images/company[5].png"
       },
       {
         "name": "Mennonite Village",
         "address": "5353 SE Columbus St, Albany, OR 97322",
         "website": "https://mennonitevillage.org/contact/",
-        "logo": "images/advertisement[6].jpg"
+        "logo": "images/company[6].jpg"
       }
       ]
 }

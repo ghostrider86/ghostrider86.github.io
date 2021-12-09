@@ -196,7 +196,7 @@ nav li:active {
 #alert {
     display: none;
     padding: 1rem;
-    background-color: red;
+    background-color: rgb(7, 39, 65);
     color: white;
 }
 

@@ -47,7 +47,6 @@ fetch(URL)
     name.textContent = data.companies[i].name;
     address.textContent = data.companies[i].address;
     website.innerHTML = "Web Link";
-    number.textContent = data.companies[i].number;
     logo.setAttribute("src", data.companies[i].logo);
     logo.setAttribute("alt", "Company logo");
 
@@ -55,7 +54,6 @@ fetch(URL)
     info.appendChild(name);
     info.appendChild(address);
     info.appendChild(website);
-    info.appendChild(number);
     card.appendChild(info);
     card.appendChild(logo);
     cards.appendChild(card);

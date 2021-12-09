@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albany Area Chamber of Commerce | Join</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/join.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="../final/pictures/logo.PNG" alt="Logo image">
+        <button onclick="toggleMenu()">&#9776;</button>
+    </header>
+    <nav id="primaryNav" class="hide">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="city.html">About Albany</a></li>
+            <li><a href="#" class="active">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Join the Chamber of Commerce</h1>
+        <div id="why">
+            <h2>Why join the Chamber of Commerce?</h2>
+            <p>Join forces with an active, positive, 
+                energetic association of business 
+                and community leaders dedicated to improving 
+                the quality of life in the Albany Oregon area!</p>
+        </div>
+        <div id="membershipOptions">
+            <h2>Membership Levels:</h2>
+            <div class="flex">
+                <div id="nonprofit" class="card">
+                    <h3>Non-pofit</h3>
+                        
+                        <li>$100</li>
+                        <li>Perks:</li>
+                        <ul class="checks">
+                            <li>Sponsor Chamber events</li>
+                        </ul>
+        
+                </div>
+                <div id="bronze" class="card">
+                    <h3>Bronze</h3>
+
+                        <li>$200</li>
+                        <li>Perks:</li>
+                        <ul class="checks">
+                            <li>Sponsor Chamber events</li>
+                            <li>Advertising Credit($50)</li>
+                        </ul>
+            
+                </div>
+                <div id="silver" class="card">
+                    <h3>Silver</h3>
+               
+                        <li>$400</li>
+                        <li>Perks:</li>
+                        <ul class="checks">
+                            <li>Sponsor Chamber events</li>
+                            <li>Advertising Credit($100)</li>
+                            <li>Chamber Networking</li>
+                        </ul>
+          
+                </div>
+                <div id="gold" class="card">
+                    <h3>Gold</h3>
+            
+                        <li>$1000</li>
+                        <li>Perks:</li>
+                        <ul class="checks">
+                            <li>Sponsor Chamber events</li>
+                            <li>Advertising Credit($200)</li>
+                            <li>Chamber Networking</li>
+                            <li>Highest recogition of all major events</li>
+                        </ul>
+            
+                </div>
+            </div>
+        </div>
+        <hr>
+        <form action="thank.html">
+            <h2>Fill out the information below:</h2>
+            <div id="form">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName" required pattern="[A-Za-z]{1,32}">
+
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName" required pattern="[A-Za-z]{1,32}">
+
+                    <label for="title">Title:</label>
+                    <input type="text" name="title" id="title" pattern="[A-Za-z].{1,5}">
+                
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required placeholder="123abc@example.com">
+
+                    <label for="tel">Phone number:</label>
+                    <input type="tel" name="tel" id="tel">
+
+                    <legend>Business Information</legend>
+                    <label for="business">Business Name:</label>
+                    <input type="text" name="business" id="business" required>
+
+                    <label for="address">Address:</label>
+                    <input type="text" name="address" id="address">
+
+                    <label for="website">Website URL:</label>
+                    <input type="url" name="website" id="address">
+
+                    <label for="comments">Business Description:</label>
+                    <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Membership</legend>
+                    <label for="membership">Membership Level:</label>
+                    <select name="regions" id="membership">
+                        <option value="" disabled selected>Select Membership ...</option>
+                        <option value="nonprofit">Non-profit ($100)</option>
+                        <option value="bronze">Bronze ($200)</option>
+                        <option value="silver">Silver ($400)</option>
+                        <option value="gold">Gold ($1000)</option>
+                    </select>
+                </fieldset>
+            </div>
+            <input type="submit" id="submit">
+        </form>
+
+    </main>
+    <footer>
+        <div class="align">
+            <div id="contact">
+                <h2>Contact Information</h2>
+                <p> 435 W 1st Ave,
+                    Albany, OR 97321</p>
+                <p>Monday - Friday 8 AM - 5 PM</p>
+                <p>albanychamber@email.com</p>
+                <p>(541) 926-1517</p>
+            </div>
+            <div id="socialMedia">
+                <h2>Follow Us</h2>
+                <a href="https://www.facebook.com/" target="_blank"><img src="../final/pictures/facebook_icon.jpg" alt="Facebook icon"></a>
+                <a href="https://twitter.com/?lang=en" target="_blank"><img src="../final/pictures/twitter_icon.jpg" alt="Twitter icon"></a>
+            </div>
+            <div id="lastUpdated">
+                <p>
+                    &copy;
+                    <span id="copyrightYear"></span> Jacob Elzinga |
+                    <a href=" https://developer.mozilla.org/en-US" target="_blank">MDN Documentation Site</a> | BYU-Idaho | Last updated:
+                    <span id="dateLastModified"></span>
+                </p>
+            </div>
+        </div> 
+    </footer>
+    <script src="js/other.js"></script>
+</body>
+</html>

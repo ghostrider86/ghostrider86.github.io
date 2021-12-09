@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albany Area Chamber of Commerce | Home</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <aside id="alert"></aside>
+    <header>
+        <img src="../final/pictures/logo.PNG" alt="Logo image">
+        <button onclick="toggleMenu()">&#9776;</button>
+    </header>
+    <nav id="primaryNav" class="hide">
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="city.html">About Albany</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="wrapper">
+            
+
+            <div id="heroImage">
+                <img src="../final/pictures/welcome_albany.webp" alt="Welcome to Albany sign.">
+            </div>
+            <div id="callToAction">
+                <h2>Join the Chamber</h2>
+                <a href="join.html"><button>Join</button></a>
+            </div>
+            <div id="events">
+                <h2>Calendar Events</h2>
+                <ul id="eventsList">
+                    <li class="eventCard"><h3>Thursday, Dec 9, 2021</h3> Service of Remembrance</li>
+                    <li class="eventCard"><h3>Thursday, Dec 16, 2021</h3> Christmas Storybook Land</li>
+                    <li class="eventCard"><h3>Saturday Jan 1, 2021</h3> Holiday - Happy New Year</li>
+                </ul>
+            </div>
+            <div id="purpose">
+                <h2>Our Purpose</h2>
+                <p>
+                    The heart of Albany’s business community since 1904, the Albany Area Chamber is the largest, 
+                    strongest and most active business advocacy organization in the area. 
+                    The Chamber brings business leaders together to accomplish collectively, what no one business could do alone. 
+                    Professionally managed, goal-oriented and highly visible,
+                     the Chamber is dedicated to taking a pro-active community leadership role. 
+                     Members have an array of opportunities to be involved in. 
+                     By attending various events, seminars, special programs or becoming a part of a committee and task force Chamber members 
+                     provide a united effort to improve the overall well-being of the community.
+                </p>
+                <h2>Core Benefits</h2>
+                <ul>
+                    <li>Creating a Strong Local Economy</li>
+                    <li>Networking Opportunities</li>
+                    <li>Political Advocacy</li>
+                    <li>Promoting the Community</li>
+                    <li>Representing the Interests of Business with Government</li>
+                </ul>
+            </div>
+
+            <hr>
+            <div id="weather">
+                <h2>Current Weather</h2>
+                <ul>
+                    <li>Tempurature: <span id="curTemp"></span>&deg;f</li>
+                    <li>Description: <span id="curDescription"></span></li>
+                    <li>Humidity: <span id="curHumidity"></span>% </li>
+                </ul>
+                <h2>3 Day Forecast</h2>
+                <div id="forecast"></div>
+            </div>
+            <hr>
+            <div id="advertising">
+                <h2>Silver & Gold Members</h2>
+                <div id="adImages">
+                    <img src="../final/pictures/business_1.png" alt="Pepsi Logo">
+                    <img src="../final/pictures/business_2.png" alt="Consumer Powers INC. Logo">
+                    <img src="../final/pictures/business_3.png" alt="Target Distribution Center Logo">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="align">
+            <div id="contact">
+                <h2>Contact Information</h2>
+                <p> 435 W 1st Ave,
+                    Albany, OR 97321</p>
+                <p>Monday - Friday 8 AM - 5 PM</p>
+                <p>albanychamber@email.com</p>
+                <p>(541) 926-1517</p>
+            </div>
+            <div id="socialMedia">
+                <h2>Find us on Social Media</h2>
+                <a href="https://www.facebook.com/" target="_blank"><img src="../final/pictures/facebook_icon.jpg" alt="Facebook icon"></a>
+                <a href="https://twitter.com/?lang=en" target="_blank"><img src="../final/pictures/twitter_icon.jpg" alt="Twitter icon"></a>
+            </div>
+            <div id="lastUpdated">
+                <p>
+                    &copy;
+                    <span id="copyrightYear"></span> Jacob Elzinga |
+                    <a href=" https://developer.mozilla.org/en-US" target="_blank">MDN Documentation Site</a> | BYU-Idaho | Last updated:
+                    <span id="dateLastModified"></span>
+                </p>
+            </div>
+        </div> 
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>

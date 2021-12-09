@@ -150,102 +150,8 @@ main h1 {
     display: none;
 }
 
-.section-content {
-    max-width: 65%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    font-size: 1.2em;
-}
-
-.section-heading {
-    margin: 0;
-    margin-bottom: .3em;
-    font-size: 2em;
-}
-
-.divider {
-    width: 70px;
-    height: 10px;
-    background: var(--color-green);
-    margin-bottom: 2em;
-}
 
 
-/***************************************************
-*                    DIRECTORY
-***************************************************/
-.directory-button-box {
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-    top: -100px;
-}
-
-#left-button img, #right-button img {
-    width: 30px;
-    user-select: none;
-}
-
-#left-button {
-    border: solid 2px var(--color-offw);
-    border-right: solid 1px var(--color-offw);
-    border-radius: 10px 0px 0px 10px;
-    padding: .3em;
-}
-
-#right-button {
-    border: solid 2px var(--color-offw);
-    border-left: solid 1px var(--color-offw);
-    border-radius: 0px 10px 10px 0px;
-    padding: .3em;
-}
-
-.grid-view {
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr); */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.list-view {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.business-directory-box {
-    background: var(--color-offw);
-    color: var(--color-blue);
-    border-radius: 10px;
-    margin-bottom: 2em;
-    padding-bottom: 1em;
-    max-width: 350px;
-}
-
-.business-directory-box h3,
-.business-directory-box p,
-.business-directory-box a {
-    padding-left: 1em;
-    padding-right: 1em;
-}
-
-.business-directory-box a {
-    color: var(--color-green);
-}
-
-.business-directory-box p {
-    color: var(--color-text);
-}
-
-.business-directory-box img {
-    border: solid 2px var(--color-offw);
-    border-radius: 10px 10px 0 0;
-    width: 346px;
-}
 
 
 /*Footer ---------------------------------------------*/
@@ -327,10 +233,6 @@ footer a {
             box-shadow: none;
         
         }
-
-        .directory-button-box {
-            display: none;
-        }
     
 }
 
@@ -381,7 +283,6 @@ footer a {
 
     nav ul li a:hover {
         color: white;
-        transition: .2s;
     }
 
     main {

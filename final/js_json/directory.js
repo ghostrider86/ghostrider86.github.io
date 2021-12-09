@@ -1,94 +1,47 @@
-//  Toggle menu
+// Change the grid style when button is pressed
+const gridbutton = document.querySelector('.gridbutton');
+const directorygrid = document.querySelector('.directory-grid');
+const businessbox = document.querySelectorAll('.business-box');
+const businesstext = document.querySelectorAll('.businesstext');
+// const businessimg = document.querySelector('.businessimg');
+gridbutton.addEventListener('click', ()=>{
+    directorygrid.classList.toggle("directory-grid-alt");
+    businessbox.forEach(div => {
+        div.classList.toggle('business-box-alt');
+      })
+    //businessbox.classList.toggle("business-box-alt");
+    businesstext.forEach(div => {
+        div.classList.toggle('businesstext-alt');
+      })
+    //businesstext.classList.toggle("businesstext-alt");
+}, false);
 
-function toggleMenu() {
-    document.getElementById("primaryNav").classList.toggle("hide")
-}
-
-// Last Updated 
-
-// Create formating for last updated information
-var weekday = new Array(
-    "Sunday", 
-    "Monday", 
-    "Tuesday", 
-    "Wednesday",
-    "Thursday", 
-    "Friday", 
-    "Saturday"
-    );
-var months = new Array(
-    "January", 
-    "February", 
-    "March",
-    "April", 
-    "May", 
-    "June", 
-    "July", 
-    "August", 
-    "September",
-    "October", 
-    "November", 
-    "December"
-    );
-const year = new Date().getFullYear();
-const lastModified = new Date(document.lastModified);
-var day = lastModified.getDay();
-var day = weekday[day];
-var month = lastModified.getMonth();
-var month = months[month];
-
-var lastModifiedFormatted = day + ', ' + lastModified.getDate() + ' ' + month + " " + lastModified.getFullYear();
-
-// Display copyright year and date last modified to footer of HTML document.
-document.getElementById("dateLastModified").textContent = lastModifiedFormatted;
-document.getElementById("copyrightYear").textContent = year;
-
-
-// Display directory information
-const URL = "js_json/directory.json"
-
-fetch(URL)
-.then(response => {
-    if (response.ok){
-        return response.json()
+// Directory page
+fetch("../js_json/businesses")
+.then(function (response) {
+    if(response.ok) {
+    return response.json();
     }
-    throw new Error("Network response was not ok.")
-    })
-.then(data => {
-    for (let i=0; i < data.directory.length; i++) {
-    let info = document.createElement("div");
-    let card = document.createElement("div")
-    card.setAttribute("class", "card");
-    let name = document.createElement("h2");
-    let address = document.createElement("p");
-    let website = document.createElement("a");
-    website.setAttribute("href", data.directory[i].website);
-    website.setAttribute("target", "_blank")
-    let logo = document.createElement("img");
-
-    name.textContent = data.directory[i].name;
-    address.textContent = data.directory[i].address;
-    website.innerHTML = "&#127760; website";
-    logo.setAttribute("src", data.directory[i].logo);
-    logo.setAttribute("alt", "Company logo");
-
-    card = document.querySelector("#cards");
-    info.appendChild(name);
-    info.appendChild(address);
-    info.appendChild(website);
-    card.appendChild(info);
-    card.appendChild(logo);
-    card.appendChild(card);
-    }
-
+throw new ERROR('Network response was not ok');
 })
+.then(function (jsonObject) {
+    console.log(jsonObject);
+    for (let i = 0; i < 8; i++) {
+        const bus = jsonObject["businesses"];
+        let name = bus[i].name;
+        let businessimg = bus[i].imageurl;
+        let website = bus[i].website;
 
-// Toggle Directory Layout
-
-function toggleGrid() {
-    document.getElementById("cards").setAttribute("class", "grid");
-}
-
-function toggleList() {
-    document.getElementById("cards").setAttribute("class", "block");
-}
+        // Change the text content
+        document.getElementById('businessimg' + i).src = businessimg;
+        document.getElementById('businessimg' + i).alt = name;
+        document.getElementById('businessname' + i).textContent = name;
+        document.getElementById('businesswebsite' + i).href = website;
+        console.log(website);
+        console.log("success");
+    }
+    
+})
+.catch(function(error){
+console.log('Fetch error: ', error.message);
+})

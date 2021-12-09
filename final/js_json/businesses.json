@@ -1,46 +1,46 @@
 {
-  "directory": [
+  "businesses": [
       {
         "name": "Pepsi",
         "address": "2636 NE Belvue St, Corvallis, OR 97330",
         "website": "https://business.albanychamber.com/list/member/pepsi-cola-of-corvallis-inc-1455",
-        "logo": "pictures/business_1.png"
+        "imageurl": "https://www.albanychamber.com/wp-content/uploads/2018/11/220px-Pepsi_logo.svg_.png"
       },
       {
         "name": "Consumer Power INC",
         "address": "6990 W Hills Rd, Philomath, OR 97370",
         "website": "https://www.cpi.coop/",
-        "logo": "pictures/business_2.png"
+        "imageurl": "https://www.albanychamber.com/wp-content/uploads/2018/12/cpilogo-e1544202343295.png"
       },
       {
         "name": "Target Distribution Center",
         "address": "875 Beta Dr SW, Albany, OR 97321",
         "website": "https://jobs.target.com/employment/albany-oregon-united-states-distribution-center-hourly-jobs/1118/11134/6252001-5744337-5736713-5710756/4",
-        "logo": "pictures/business_3.png"
+        "imageurl": "https://www.albanychamber.com/wp-content/uploads/2019/11/target_distribution.png"
       },
       {
         "name": "Allegheny Technologies Incorporated",
         "address": "530 34th Ave SW, Albany, OR 97322",
         "website": "https://www.atimetals.com/aboutati/Pages/Locations.aspx",
-        "logo": "pictures/business_4.png"
+        "imageurl": "https://www.albanychamber.com/wp-content/uploads/2015/04/ATI-Logo.jpg"
       },
       {
         "name": "Weyerhaeuser",
         "address": "2812 Old Salem Rd NE, Albany, OR 97321",
         "website": "https://www.weyerhaeuser.com/woodproducts/distribution/albany-distribution-center/",
-        "logo": "pictures/business_5.png"
+        "imageurl": "https://www.weyerhaeuser.com/application/files/5515/1019/2563/WY-Logo-Vertical-Color.jpg"
       },
       {
         "name": "Pacific Power",
         "address": "830 Old Salem Rd NE, Albany, OR 97321",
         "website": "https://www.pacificpower.net/",
-        "logo": "pictures/business_6.png"
+        "imageurl": "https://www.albanychamber.com/wp-content/uploads/2017/07/PP_200x150.png"
       },
       {
         "name": "Mennonite Village",
         "address": "5353 SE Columbus St, Albany, OR 97322",
         "website": "https://mennonitevillage.org/contact/",
-        "logo": "pictures/business_7.png"
+        "imageurl": "phttps://www.albanychamber.com/wp-content/uploads/2018/12/0-e1544202458319.jpg"
       }
       ]
 }

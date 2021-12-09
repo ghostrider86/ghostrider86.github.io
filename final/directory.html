@@ -25,22 +25,12 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <section class="business-directory white-bg">
-        <div class="section-content">
-            <h2 class="section-heading">Business Directory</h2>
-            <div class="divider"></div>
-            <div class="directory-button-box">
-                <div id="left-button" class="directory-button">
-                    <img src="../final/pictures/list.png" alt="list icon" draggable="false">
-                </div>
-                <div id="right-button" class="directory-button">
-                    <img src="../final/pictures/grid.png" alt="grid icon" draggable="false">
-                </div>
-            </div>
-            <div class="grid-view"></div>
-        </div>
-    </section>
-</main>
+    <main>
+        <h1>Business Directory</h1>
+        <button class="layoutButton" onclick="toggleGrid()"><img src="../final/pictures/grid.png" alt="grid icon" class="button"></button>
+        <button class="layoutButton" onclick="toggleList()"><img src="../final/pictures/list.png" alt="list icon" class="button"></button>
+        <div id="cards"></div>
+    </main>
     <footer>
         <div class="align">
             <div id="contact">
